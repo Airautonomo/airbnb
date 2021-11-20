@@ -1,11 +1,12 @@
 # MyAirbnb Clone
 ## _What it has taught me_
 
-#Do this
+##Do this
 ✨Its faster!✨!
 ```
 import foo from folder/foo
 ```
+##Not this
 🐌This is slower!🐌
 ```
 import {foo} from folder
@@ -36,5 +37,5 @@ yarn
 yarn start
 ```
 
-#bye
+##bye
 👋
