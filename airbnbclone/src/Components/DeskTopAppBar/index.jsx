@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { styled } from '@mui/material/styles'
+import styled from '@mui/material/styles/styled'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -9,9 +9,11 @@ import CenteredTabs from '../CenteredTabs'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LanguageIcon from '@mui/icons-material/LanguageSharp';
 import useStyles from './styles'
-import { useTheme } from '@mui/styles';
+import useTheme from '@mui/styles/useTheme';
 import CompanyLogo from '../CompanyLogo'
 import { CustomToggleButton } from '../CustomStyledComponents'
+import TinyCompanyLogo from '../TinyCompanyLogo'
+import useMediaQuery from '@mui/material/useMediaQuery'
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   // Override media queries injected by theme.mixins.toolbar
   [theme.breakpoints.down('sm')]: {
@@ -59,6 +61,7 @@ const DoubleIconButton = styled(IconButton)(({ theme }) => ({
 
 export default function DeskTopAppBar() {
   const theme = useTheme()
+  const mobileView = useMediaQuery(theme.breakpoints.down("lg"))
   const classes = useStyles(theme)
   return (
     <AppBar
@@ -66,7 +69,8 @@ export default function DeskTopAppBar() {
       <StyledToolbar
       >
         <Box className={classes.left} >
-          <CompanyLogo />
+          {mobileView ? <TinyCompanyLogo /> : <CompanyLogo />}
+
         </Box >
         <Box
           sx={{ flex: 1 }}
@@ -80,7 +84,7 @@ export default function DeskTopAppBar() {
             size='small'
             color="inherit"
             type="text">
-            Become a host
+            Become a Host
           </StyledIconButton>
           <IconButton
             size="small"

@@ -3,13 +3,13 @@ import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import LanguageIcon from '@mui/icons-material/LanguageSharp';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle'
+import LanguageIcon from '@mui/icons-material/LanguageSharp'
 import useStyles from './styles'
-import { useTheme } from '@mui/styles';
+import useTheme from '@mui/styles/useTheme'
 import CompanyLogo from '../CompanyLogo'
-import SearchIcon from '@mui/icons-material/Search'
-import { Button, Input, ToggleButton } from '@mui/material'
+
+import Button from '@mui/material/Button'
 import {
   StyledIconButton,
   CustomToggleButton,
@@ -33,30 +33,26 @@ export default function SearchBar() {
         <Box
           sx={{ flex: 1 }}
           className={classes.center}>
-          <Box className={classes.searchfeild}>
-            <Button
-              varient="out-lined"
-              type="text"
-              className={classes.searchButton}
-            />
-            <IconButton
-              backgroundColor={"#FF385C !important"}
-              color={
-                theme.palette.secondary.error
-              }>
-              <SearchSvg className={classes.searchicon} />
+          <Box
+            className={classes.searchfeild}
 
-            </IconButton>
+          >
+            <Button
+
+              className={classes.searchButton}
+            >
+              <SearchSvg className={classes.searchicon} />
+            </Button>
           </Box>
         </Box>
         <Box
           className={classes.right}
         >
           <StyledIconButton
-            size='large'
+            size='small'
             color="inherit"
             type="text">
-            Become a host
+            Become a Host
           </StyledIconButton>
           <IconButton
             size="small"

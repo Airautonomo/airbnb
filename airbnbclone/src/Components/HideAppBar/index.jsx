@@ -9,6 +9,7 @@ import Slide from '@mui/material/Slide'
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material/FormControl';
 import useStyles from './styles'
 import DeskTopAppBar from '../DeskTopAppBar'
+import Foto from '../Foto'
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -41,18 +42,12 @@ export default function HideAppBar(props) {
 
       <Container>
         <Box sx={{ my: 24 }}>
-          {[...new Array(102)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-            )
-            .join('\n')}
+          <Foto />
+
         </Box>
       </Container>
       <Box sx={{ my: 2 }}>
-        hi
+        <Foto />
       </Box >
     </React.Fragment>
   );

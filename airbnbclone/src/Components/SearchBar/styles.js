@@ -1,5 +1,5 @@
-import { makeStyles } from '@mui/styles'
-import { padding } from '@mui/system'
+import makeStyles from '@mui/styles/makeStyles'
+
 
 const styles = makeStyles(theme => ({
 
@@ -13,25 +13,29 @@ const styles = makeStyles(theme => ({
     padding: '10px',
     zIndex: 50,
   },
+  left: {
+    marginLeft: '5%',
+    border: '1px solid black',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+
+    },
+  },
+  center: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    minWidth: 'fit-content',
+    [theme.breakpoints.down('sm')]: {
+      justifyContent: 'center',
 
 
-
-
-
-
-  searchicon: {
-
-
-    width: '1.5em',
-    height: '1.5em',
-    fill: '#fff',
-    marginRight: '0.5em',
-    marginLeft: '0.5em',
-    '&:hover': {
-      fill: '#fff',
     },
   },
   searchfeild: {
+
+
     fontSize: '14px !important',
     lineHeight: '18px !important',
     flex: '1 1 auto !important',
@@ -43,10 +47,11 @@ const styles = makeStyles(theme => ({
     overflow: 'hidden !important',
     display: 'flex',
     alignItems: 'flex-end',
+    justifyContent: "flex-end",
     width: '300px !important',
     maxWidth: '35% !important',
     height: '50px',
-    border: '1px solid lightgray',
+
     borderRadius: '999px',
     margin: '0px 10px',
     boxShadow: '0px 1px 2px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12)',
@@ -54,45 +59,72 @@ const styles = makeStyles(theme => ({
       margin: '0px 5px',
     },
   },
+
   searchButton: {
-    flex: '0 0 auto !important',
-    width: "300px !important",
+    border: '6px solid blue',
+    boxSizing: 'border-box',
+    fontSize: '14px !important',
+    lineHeight: '18px !important',
+    // flex: '0 0 auto !important',
+    // minWidth: '0px !important',
     fontWeight: '600 !important',
     padding: '10px 16px !important',
     textOverflow: 'ellipsis !important',
     whiteSpace: 'nowrap !important',
     overflow: 'hidden !important',
-    display: 'flex',
-    alignItems: 'flex-end',
-    justifyContent: 'flex-end',
-    maxWidth: 'fit-content',
-    border: '1px solid lightgray',
-    borderRadius: '800px',
-    margin: '0px 10px',
-    [theme.breakpoints.down('sm')]: {
-      margin: '0px 5px',
-    },
-  },
-  center: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    border: '1px solid yellow',
-    minWidth: 'fit-content',
-    [theme.breakpoints.down('sm')]: {
-      justifyContent: 'center',
+    maxWidth: '35% !important',
+    height: "32px !important",
+
+    borderRadius: '999px',
+    width: "32px !important",
+    fontFamily: "inherit !important",
 
 
-    },
-  },
-  left: {
-    marginLeft: '5%',
-    border: '1px solid black',
-    [theme.breakpoints.down('sm')]: {
-      display: 'none'
 
+
+
+
+    color: '#FFFFFF !important',
+    // fill: '#fff',
+
+
+
+
+    margin: '0px -29px 0px 0px !important',
+
+  },
+
+  searchicon: {
+    borderRadius: "50% !important",
+    height: "32px !important",
+    margin: "7px 7px 7px 0 !important",
+    padding: "10px !important",
+    width: "32px !important",
+    fontFamily: "inherit !important",
+    fontSize: "inherit !important",
+    fontWeight: "inherit !important",
+    lineHeight: "inherit !important",
+
+
+
+    backgroundColor: '#FF385C',
+    borderRadius: '50%',
+    color: '#FFFFFF',
+    fill: '#fff',
+
+    '&:hover': {
+      fill: '#fff',
+    },
+    [theme.breakpoints.down('sm')]: {
+      margin: "0px 5px",
     },
   },
+
+
+
+
+
+
   right: {
     display: 'flex',
     color: "theme.palette.common.white !important",
@@ -101,14 +133,20 @@ const styles = makeStyles(theme => ({
       display: 'none',
     },
   },
-  search: {
-    marginLeft: theme.spacing(4),
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.common.white,
-    '&:hover': {
-      backgroundColor: theme.palette.common.grey,
-    },
-  },
+
+
+
+
+
+
+  // search: {
+  //   marginLeft: theme.spacing(4),
+  //   borderRadius: theme.shape.borderRadius,
+  //   backgroundColor: theme.palette.common.white,
+  //   '&:hover': {
+  //     backgroundColor: theme.palette.common.grey,
+  //   },
+  // },
 
 
 

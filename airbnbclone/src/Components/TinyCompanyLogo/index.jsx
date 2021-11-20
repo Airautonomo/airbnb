@@ -1,10 +1,10 @@
 import React from 'react'
-import { ReactComponent as IconSvg } from "../../Assets/Svgs/icon.svg"
+import { ReactComponent as TinyIconSvg } from "../../Assets/Svgs/tinyicon.svg"
 import IconButton from '@mui/material/IconButton'
 import useStyles from './styles'
 
 import { useTheme } from '@mui/styles';
-const CompanyLogo = ({ color }) => {
+const TinyCompanyLogo = ({ color }) => {
   const theme = useTheme()
   const classes = useStyles(theme)
   return (
@@ -16,7 +16,7 @@ const CompanyLogo = ({ color }) => {
       aria-label="Airbnb Icon"
       sx={{ ml: 1 }}
     >
-      <IconSvg
+      <TinyIconSvg
         className={classes.icon}
       />
     </IconButton>
@@ -24,4 +24,4 @@ const CompanyLogo = ({ color }) => {
   )
 }
 
-export default CompanyLogo
+export default TinyCompanyLogo

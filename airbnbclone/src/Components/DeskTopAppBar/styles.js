@@ -1,4 +1,4 @@
-import { makeStyles } from '@mui/styles'
+import makeStyles from '@mui/styles/makeStyles'
 
 const styles = makeStyles(theme => ({
   nav: {
@@ -17,7 +17,7 @@ const styles = makeStyles(theme => ({
     alignItems: 'center',
 
     minWidth: 'fit-content',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
@@ -36,8 +36,9 @@ const styles = makeStyles(theme => ({
     display: 'flex',
     color: "theme.palette.common.white !important",
     marginRight: '5%',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       display: 'none',
+
     },
   },
   search: {
