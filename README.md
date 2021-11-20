@@ -1,16 +1,15 @@
 # MyAirbnb Clone
 ## _What it has taught me_
--✨faster✨!
+
+#Do this
+✨Its faster!✨!
 ```
 import foo from folder/foo
 ```
--🐌slower🐌
+🐌This is slower!🐌
 ```
 import {foo} from folder
 ```
-The latter is much 
-
-[![Build Status]
 
 #This Airbnb clone is  
 -mobile-ready using mediaQuery hook
