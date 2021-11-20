@@ -126,6 +126,7 @@ export default function ElevateAppBar(props) {
               className={classes.right}
             >
               <StyledIconButton
+                aria-label="link to become a host page"
                 size='small'
                 color="inherit"
                 type="text">

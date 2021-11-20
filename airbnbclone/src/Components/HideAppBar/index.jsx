@@ -40,15 +40,16 @@ export default function HideAppBar(props) {
         </AppBar>
       </HideOnScroll>
 
-      <Container>
+      {/* <Container>
         <Box sx={{ my: 24 }}>
           <Foto />
 
         </Box>
-      </Container>
-      <Box sx={{ my: 2 }}>
+      </Container> */}
+      <Box sx={{ my: 30 }}>
         <Foto />
       </Box >
+
     </React.Fragment>
   );
 }

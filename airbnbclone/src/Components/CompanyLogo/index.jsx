@@ -1,6 +1,6 @@
 import React from 'react'
 import { ReactComponent as IconSvg } from "../../Assets/Svgs/icon.svg"
-import IconButton from '@mui/material/IconButton'
+import { Box } from '@mui/material'
 import useStyles from './styles'
 
 import { useTheme } from '@mui/styles';
@@ -9,7 +9,7 @@ const CompanyLogo = ({ color }) => {
   const classes = useStyles(theme)
   return (
 
-    <IconButton
+    <Box
       class=""
 
       color={"inherit"}
@@ -19,7 +19,7 @@ const CompanyLogo = ({ color }) => {
       <IconSvg
         className={classes.icon}
       />
-    </IconButton>
+    </Box>
 
   )
 }

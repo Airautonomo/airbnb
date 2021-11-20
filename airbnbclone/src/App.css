@@ -89,7 +89,7 @@
   position:static;
   width:auto
  }
- .skip-to-content:focus {
+ /* .skip-to-content:focus {
   background-color:white;
   font-size:18px;
   padding:0 24px;
@@ -99,7 +99,7 @@
   top:3px;
   z-index:10000
   
- }
+ } */
  .foto {
   display: inline-block !important;
   vertical-align: bottom !important;
@@ -185,6 +185,5 @@
     transition: none !important;
   }
 } */
-
 
 

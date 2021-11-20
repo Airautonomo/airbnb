@@ -25,12 +25,12 @@ export const StyledIconButton = styled(IconButton)(({ theme }) => ({
 export const CustomToggleButton = styled(ToggleButton)(({ theme }, ...props) => ({
   ...props,
   display: "block",
-  fontSize: '.9rem',
+  fontSize: '.2rem',
   appearance: 'none !important',
   position: 'relative !important',
   backgroundColor: "#FFFFFF !important",
   border: '1px solid #DDDDDD !important',
-  color: '#222222 !important',
+
   cursor: 'pointer !important',
   display: '-webkit-inline-box !important',
   display: '-moz-inline-box !important',

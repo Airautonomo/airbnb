@@ -23,14 +23,15 @@ const styles = makeStyles(theme => ({
     marginTop: '-100x',
     zIndex: 50,
   },
-  center: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    border: '1px solid yellow',
-    minWidth: 'fit-content',
 
-  },
+  // center: {
+  //   display: 'flex',
+  //   justifyContent: 'space-around',
+  //   alignItems: 'center',
+  //   border: '1px solid yellow',
+  //   minWidth: 'fit-content',
+
+  // },
   left: {
     marginLeft: '5%',
     border: '1px solid black',

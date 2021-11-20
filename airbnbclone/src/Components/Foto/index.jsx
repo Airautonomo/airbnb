@@ -5,11 +5,11 @@ function Foto() {
   const classes = useStyles()
   return (
     <body>
-      <div class="_1gvk5l7"
+      <div
       >
         <div className={classes.wrapper}>
           <div class="foto"
-            // style={{ height: "100%", width: "100 %", backgroundSize: "cover" }}
+            style={{ height: "100%", width: "100 %", backgroundSize: "cover" }}
             role="img" aria-busy="true" aria-label="Image is loading">
             <picture>
               <source
@@ -47,7 +47,7 @@ function Foto() {
                                                                                       https://a0.muscache.com/im/pictures/9cd746cc-e184-4de5-9479-0b18e3a2b89e.jpg?im_w=320 1x,
                                                                                       https://a0.muscache.com/im/pictures/9cd746cc-e184-4de5-9479-0b18e3a2b89e.jpg?im_w=720 2x
                                                                                   " />
-              <img class="_dae4t6"
+              <img class=""
                 // style={{
                 //   position: "absolute",
                 //   left: 0,

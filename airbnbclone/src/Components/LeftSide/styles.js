@@ -1,12 +1,12 @@
 import makeStyles from '@mui/styles/makeStyles'
-
 const styles = makeStyles(theme => ({
   root: {
-    marginRight: theme.spacing(1),
-    backgroundColor: 'inheret',
-    color: 'inherit',
-    borderOpacity: 0.5
-
+    marginLeft: '5%',
+    border: '1px solid black',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   }
 }))
+
 export default styles
