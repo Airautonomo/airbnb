@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import DeskTopAppBar from './Components/DeskTopAppBar'
+import Search from './Components/HideAppBar'
 
+
+import ElevateAppBar from './Components/ElevateAppBar';
+import HideAppBar from './Components/HideAppBar';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <ElevateAppBar />
+      <HideAppBar />
+
+
+
+    </>
   );
 }
 
