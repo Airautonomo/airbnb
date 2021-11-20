@@ -20,9 +20,13 @@ import {foo} from folder
 
 
 ## About
-=====
+
 This is a Clone of the Airbnb Landing page.
-It is made using React, and I am using styled components, as well as the makeStyles hook to handle the css.
+It is made using React, 
+- using styled components
+- the makeStyles hook.
+- a theme 
+- media querys
 
 It has been a really fun project to make and is only about 1/3 way through!
 I am expecting it to have 3 Nav Bars! 
