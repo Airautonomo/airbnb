@@ -10,7 +10,7 @@ export default function SearchMiddle() {
   return (
     <Box
       sx={{ flex: 1 }}
-      className={classes.root}>
+      className={classes.searchroot}>
       <Box
         className={classes.searchfeild}
       >

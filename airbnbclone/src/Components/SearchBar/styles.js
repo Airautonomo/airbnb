@@ -4,7 +4,7 @@ import makeStyles from '@mui/styles/makeStyles'
 const styles = makeStyles(theme => ({
 
 
-  root: {
+  findstuff: {
     backgroundColor: '#fff !important',
     display: 'flex',
     flexWrap: 'wrap',

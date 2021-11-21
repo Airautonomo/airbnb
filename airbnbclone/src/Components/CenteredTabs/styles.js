@@ -17,11 +17,28 @@ const styles = makeStyles(theme => ({
     minWidth: 300,
     display: 'inline-flex',
     justifyContent: 'space-between',
+    [theme.breakpoints.down('lg')]: {
 
+
+      fontSize: '14px !important',
+      lineHeight: '18px !important',
+      fontWeight: '600 !important',
+
+
+
+
+
+    },
   },
   tab: {
-    padding: '14px 24px',
+    padding: '10px 12px',
+    width: "114.06px",
+    height: "38px",
     minWidth: 100,
+    fontSize: "100px",
+    letterSpacing: "1px",
+    color: "red",
+    // display: "inline-block  !important",
     textTransform: 'none',
     '&:hover': {
       cursor: 'pointer',

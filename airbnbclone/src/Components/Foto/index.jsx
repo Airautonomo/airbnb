@@ -17,25 +17,25 @@ function Foto() {
                                                                                       https://a0.muscache.com/im/pictures/3953696f-0c75-46ad-a6c4-e0190c1ecc73.jpg?im_w=2560 1x,
                                                                                       https://a0.muscache.com/im/pictures/3953696f-0c75-46ad-a6c4-e0190c1ecc73.jpg?im_w=2560 2x
                                                                                   "
-                media="(min-width: 2080px)" />
+                media="(min-width: 1480px)" />
               <source
                 srcset="
                                                                                       https://a0.muscache.com/im/pictures/3953696f-0c75-46ad-a6c4-e0190c1ecc73.jpg?im_w=1440 1x,
                                                                                       https://a0.muscache.com/im/pictures/3953696f-0c75-46ad-a6c4-e0190c1ecc73.jpg?im_w=2560 2x
                                                                                   "
-                media="(min-width: 1440px)" />
+                media="(min-width: 1240px)" />
               <source
                 srcset="
                                                                                       https://a0.muscache.com/im/pictures/3953696f-0c75-46ad-a6c4-e0190c1ecc73.jpg?im_w=960  1x,
                                                                                       https://a0.muscache.com/im/pictures/3953696f-0c75-46ad-a6c4-e0190c1ecc73.jpg?im_w=1920 2x
                                                                                   "
-                media="(min-width: 950px)" />
+                media="(min-width: 750px)" />
               <source
                 srcset="
                                                                                       https://a0.muscache.com/im/pictures/3953696f-0c75-46ad-a6c4-e0190c1ecc73.jpg?im_w=720  1x,
                                                                                       https://a0.muscache.com/im/pictures/3953696f-0c75-46ad-a6c4-e0190c1ecc73.jpg?im_w=1440 2x
                                                                                   "
-                media="(min-width: 744px)" />
+                media="(min-width: 544px)" />
               <source
                 srcset="
                                                                                       https://a0.muscache.com/im/pictures/9cd746cc-e184-4de5-9479-0b18e3a2b89e.jpg?im_w=320 1x,

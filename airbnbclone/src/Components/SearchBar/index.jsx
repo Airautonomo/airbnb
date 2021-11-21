@@ -22,7 +22,7 @@ export default function SearchBar() {
   const classes = useStyles(theme)
   return (
     <AppBar
-      className={classes.root}>
+      className={classes.findstuff}>
       <StyledToolBar
       >
         <LeftSide />

@@ -5,12 +5,13 @@ import Search from './Components/HideAppBar'
 
 import ElevateAppBar from './Components/ElevateAppBar';
 import HideAppBar from './Components/HideAppBar';
+import Pricing from './Components/Pricing';
 function App() {
   return (
     <>
-
-      <ElevateAppBar />
-      <HideAppBar />
+      <Pricing />
+      {/* <ElevateAppBar />
+      <HideAppBar /> */}
 
 
 

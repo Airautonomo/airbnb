@@ -78,11 +78,11 @@ const CenteredTabs = () => {
         />
         <StyledTab
           classname={classes.tab}
-          label="Experiences"
+          label="Monthly stays"
         />
         <StyledTab
           classname={classes.tab}
-          label="Online Experiences"
+          label="Experiences"
         />
       </StyledTabs>
     </Box>

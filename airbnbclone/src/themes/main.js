@@ -4,6 +4,15 @@ const spacing = (factor) => factor * 8
 
 const theme = createTheme({
   spacing,
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 374,
+      md: 744,
+      lg: 950,
+      xl: 1128,
+    },
+  },
   palette: {
     primary: {
       main: '#ff385c',
