@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/%7Bairbnb%7D/static/css/main.23e9bbdc.chunk.css",
+    "main.js": "/%7Bairbnb%7D/static/js/main.ae96cbce.chunk.js",
+    "main.js.map": "/%7Bairbnb%7D/static/js/main.ae96cbce.chunk.js.map",
+    "runtime-main.js": "/%7Bairbnb%7D/static/js/runtime-main.a6492950.js",
+    "runtime-main.js.map": "/%7Bairbnb%7D/static/js/runtime-main.a6492950.js.map",
+    "static/js/2.e7d4c672.chunk.js": "/%7Bairbnb%7D/static/js/2.e7d4c672.chunk.js",
+    "static/js/2.e7d4c672.chunk.js.map": "/%7Bairbnb%7D/static/js/2.e7d4c672.chunk.js.map",
+    "static/js/3.dfcb28fe.chunk.js": "/%7Bairbnb%7D/static/js/3.dfcb28fe.chunk.js",
+    "static/js/3.dfcb28fe.chunk.js.map": "/%7Bairbnb%7D/static/js/3.dfcb28fe.chunk.js.map",
+    "index.html": "/%7Bairbnb%7D/index.html",
+    "static/css/main.23e9bbdc.chunk.css.map": "/%7Bairbnb%7D/static/css/main.23e9bbdc.chunk.css.map",
+    "static/js/2.e7d4c672.chunk.js.LICENSE.txt": "/%7Bairbnb%7D/static/js/2.e7d4c672.chunk.js.LICENSE.txt",
+    "static/media/account.fac18bea.svg": "/%7Bairbnb%7D/static/media/account.fac18bea.svg",
+    "static/media/icon.1fbdc141.svg": "/%7Bairbnb%7D/static/media/icon.1fbdc141.svg",
+    "static/media/search.474255bf.svg": "/%7Bairbnb%7D/static/media/search.474255bf.svg",
+    "static/media/tinyicon.6840e6d4.svg": "/%7Bairbnb%7D/static/media/tinyicon.6840e6d4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6492950.js",
+    "static/js/2.e7d4c672.chunk.js",
+    "static/css/main.23e9bbdc.chunk.css",
+    "static/js/main.ae96cbce.chunk.js"
+  ]
+}
