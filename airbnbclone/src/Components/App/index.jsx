@@ -1,30 +1,47 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardHeader from '@mui/material/CardHeader';
-
-import Grid from '@mui/material/Grid';
-import StarIcon from '@mui/icons-material/StarBorder';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import GlobalStyles from '@mui/material/GlobalStyles';
-import Container from '@mui/material/Container';
-import LeftSide from '../LeftSide';
-import CenteredTabs from '../CenteredTabs';
-import RightSide from '../RightSide';
+import * as React from 'react'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
+import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import CardHeader from '@mui/material/CardHeader'
+import Grid from '@mui/material/Grid'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
+import Link from '@mui/material/Link'
+import GlobalStyles from '@mui/material/GlobalStyles'
+import Container from '@mui/material/Container'
+import LeftSide from '../LeftSide'
+import CenteredTabs from '../CenteredTabs'
+import RightSide from '../RightSide'
 import PropTypes from 'prop-types'
 import Slide from '@mui/material/Slide'
 import useScrollTrigger from '@mui/material/useScrollTrigger'
 import useStyles from './styles'
-import useTheme from '@mui/styles/useTheme';
+import useTheme from '@mui/styles/useTheme'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import SearchMiddle from '../SearchMiddle';
-import PillForm from '../PillForm';
+import SearchMiddle from '../SearchMiddle'
+import PillForm from '../PillForm'
+import ElevateAppBar from '../ElevateAppBar'
+import { styled, alpha } from '@mui/material/styles'
+
+// export const StyledAppBar = styled(AppBar)(({ theme }) => ({
+//   // Override media queries injected by theme.mixins.toolbar
+//   position: 'sticky',
+//   zIndex: '150',
+//   [theme.breakpoints.down('sm')]: {
+//     minHeight: '164px',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//     flexdirection: 'column',
+//     zIndex: '1',
+
+
+//   },
+//   backgroundColor: [theme.palette.common.black,],
+//   color: [theme.palette.common.white,],
+// }));
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -38,15 +55,20 @@ function HideOnScroll(props) {
     </Slide>
   );
 }
-
 HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
   window: PropTypes.func,
 };
+// const CustomHideAppBar = styled(AppBar)(({ theme }) => ({
+//   margin: "0 80px 0 80px",
+//   display: "flex",
+//   alignItems: "center",
+//   alignSelf: "center",
+//   justifyContent: "space-between",
 
+// }));
 
 function HideAppBar(props) {
-
   const theme = useTheme()
   const mediumView = useMediaQuery(theme.breakpoints.down("md"))
   const largeView = useMediaQuery(theme.breakpoints.up('lg'))
@@ -55,25 +77,33 @@ function HideAppBar(props) {
     <React.Fragment>
       <HideOnScroll {...props} >
         {!mediumView ? <AppBar
-
           color="inherit"
-          // elevation={0}
+
           sx={{
-            // borderBottom:
-            //   (theme) => `1px solid ${theme.palette.divider}`,
+            marginTop: "-10px",
+            zIndex: 150, position: 'sticky',
+            backgroundColor: 'black', color: 'white',
+            display: 'flex',
+            justifyContent: 'space-between',
+
+            borderBottom:
+              (theme) => `1px solid ${theme.palette.divider}`,
+
             margin: (theme) => `0 ${theme.spacing(8)}px`
           }}
           className={classes.nav}>
           <Toolbar
             sx={
               {
+                backgroundColor: 'black',
                 flexWrap: 'wrap',
                 alignItems: 'center',
                 justifyContent: 'space-between'
               }}
             className={classes.toolbar}>
             <Box
-              color="inherit"
+              marginRight={5}
+              marginLeft={5}
               noWrap
             >
               <LeftSide />
@@ -85,11 +115,16 @@ function HideAppBar(props) {
               >
                 <CenteredTabs />
               </Box> :
+              <Box marginRight={5}>
+                <RightSide />
+              </Box>
 
-              <RightSide />
             }
             {largeView ?
-              <RightSide />
+              <Box marginRight={5}>
+                <RightSide />
+              </Box>
+
               :
               <Box
                 sx={{ flexGrow: 1 }}
@@ -97,16 +132,18 @@ function HideAppBar(props) {
               >
                 <CenteredTabs />
               </Box>}
+
           </Toolbar>
+          <PillForm />
         </AppBar> : <SearchMiddle />}
       </HideOnScroll>
       <Container>
-        <Box sx={{ my: 24 }}>
-        </Box>
+        {/* <Box sx={{ my: 24 }}>
+        </Box> */}
       </Container>
-      <Box sx={{ my: 30 }}>
+      {/* <Box sx={{ my: 30 }}>
 
-      </Box >
+      </Box > */}
 
     </React.Fragment>
   );
@@ -116,7 +153,7 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="https://tannerbleakley.com/">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -127,41 +164,45 @@ function Copyright(props) {
 
 const tiers = [
   {
-    title: 'Free',
-    price: '0',
+    title: 'Ashville',
+
     description: [
-      '10 users included',
-      '2 GB of storage',
-      'Help center access',
-      'Email support',
+
+      '248 miles away',
+
     ],
-    buttonText: 'Sign up for free',
-    buttonVariant: 'outlined',
+
   },
   {
-    title: 'Pro',
+    title: 'Charleston',
     subheader: 'Most popular',
     price: '15',
     description: [
-      '20 users included',
-      '10 GB of storage',
-      'Help center access',
-      'Priority email support',
+
+      '2 miles away',
+
     ],
-    buttonText: 'Get started',
-    buttonVariant: 'contained',
+
   },
   {
-    title: 'Enterprise',
+    title: 'Bryson City',
     price: '30',
     description: [
-      '50 users included',
-      '30 GB of storage',
-      'Help center access',
-      'Phone & email support',
+
+      '24 miles away',
+
     ],
-    buttonText: 'Contact us',
-    buttonVariant: 'outlined',
+
+  },
+  {
+    title: 'Gatlinburg',
+    price: '30',
+    description: [
+
+      '48 miles away',
+
+    ],
+
   },
 ];
 
@@ -190,9 +231,9 @@ const footers = [
   },
 ];
 
-function PricingContent() {
+function AppContent() {
   const theme = useTheme()
-  const mediumView = useMediaQuery(theme.breakpoints.down("md"))
+  const mediumView = useMediaQuery(theme.breakpoints.up("md"))
   const largeView = useMediaQuery(theme.breakpoints.up('lg'))
   const classes = useStyles(theme)
   return (
@@ -202,21 +243,14 @@ function PricingContent() {
         body: {
           // paddingLeft: "80px",
           // paddingRight: "80px",
-          backgroundColor: [theme.palette.background.default],
-          color: [theme.palette.text.primary],
+
+          //could use theme here
+          backgroundColor: 'black',
+          color: 'white',
         }
       }} />
-      <Box
-        sx={{
-
-
-        }}
-
-      >
-        <HideAppBar />
-        <PillForm />
-      </Box>
-
+      {mediumView ? <> <ElevateAppBar />
+        <HideAppBar /></> : <><SearchMiddle /></>}
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
         <Typography
@@ -249,11 +283,10 @@ function PricingContent() {
               <Card>
                 <CardHeader
                   title={tier.title}
-                  subheader={tier.subheader}
-                  titleTypographyProps={{ align: 'center' }}
-                  action={tier.title === 'Pro' ? <StarIcon /> : null}
+                  titleTypographyProps={{ align: 'left' }}
+
                   subheaderTypographyProps={{
-                    align: 'center',
+                    align: 'left',
                   }}
                   sx={{
                     backgroundColor: (theme) =>
@@ -271,17 +304,11 @@ function PricingContent() {
                       mb: 2,
                     }}
                   >
-                    <Typography component="h2" variant="h3" color="text.primary">
-                      ${tier.price}
-                    </Typography>
-                    <Typography variant="h6" color="text.secondary">
-                      /mo
-                    </Typography>
                   </Box>
                   <ul>
                     {tier.description.map((line) => (
                       <Typography
-                        component="li"
+                        // component="li"
                         variant="subtitle1"
                         align="center"
                         key={line}
@@ -336,6 +363,6 @@ function PricingContent() {
   );
 }
 
-export default function Pricing() {
-  return <PricingContent />;
+export default function App() {
+  return <AppContent />;
 }

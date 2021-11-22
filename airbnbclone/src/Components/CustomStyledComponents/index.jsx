@@ -1,6 +1,4 @@
-import React from "react";
-import useStyles from './styles'
-import { useTheme } from '@mui/styles';
+
 import { styled } from '@mui/material/styles'
 import Toolbar from '@mui/material/Toolbar'
 import { AppBar, IconButton } from "@mui/material";
@@ -21,14 +19,14 @@ export const StyledToolBar = styled(Toolbar)(({ theme }) => ({
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
   fontSize: '.9rem',
 }));
-export const CustomAppBar = styled(AppBar)(({ theme }) => ({
-  margin: "0 80px 0 80px",
-  display: "flex",
-  alignItems: "center",
-  alignSelf: "center",
-  justifyContent: "space-between",
+// export const CustomAppBar = styled(AppBar)(({ theme }) => ({
+//   margin: "0 80px 0 80px",
+//   display: "flex",
+//   alignItems: "center",
+//   alignSelf: "center",
+//   justifyContent: "space-between",
 
-}));
+// }));
 
 export const CustomToggleButton = styled(ToggleButton)(({ theme }, ...props) => ({
   ...props,

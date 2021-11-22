@@ -13,12 +13,7 @@ const styles = makeStyles(theme => ({
     zIndex: 100,
   },
 
-  // toolbar: {
-  //   [theme.breakpoints.down('lg')]: {
-  //     flexDirection: 'row',
-  //     alignItems: 'space-around',
-  //   }
-  // },
+
   nav: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -32,7 +27,8 @@ const styles = makeStyles(theme => ({
   },
 
   toolbar: {
-    marginTop: '10px',
+    marginTop: '25px',
+    marginBottom: '15px',
   },
 
   center: {

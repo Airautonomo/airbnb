@@ -9,11 +9,10 @@ const styles = makeStyles(theme => ({
     maxWidth: '750px',
     minWidth: '60%',
 
-    border: "solid green 1px"
+
   },
+
   wrapper: {
-
-
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -22,37 +21,24 @@ const styles = makeStyles(theme => ({
     margin: '0px 2px',
     backgroundColor: '#fff',
     borderRadius: '35px',
-
     width: '100%',
+    maxWidth: '730px',
     height: "66px !important",
-
-
-
   },
+
   label: {
-
-
-    // font-size: 12px !important;
-    // line-height: 16px !important;
-    // font-weight: 800 !important;
-    // letter-spacing: 0.04em !important;
-    // padding-bottom: 2px !important;
-
     fontSize: '14px !important',
     lineHeight: '16px !important',
     fontWeight: '800 !important',
     letterSpacing: '0.04em !important',
     paddingBottom: '2px !important',
-
-
-
-
     fontSmooth: 'always',
     color: '#000',
     backgroundColor: '#fff',
-    border: "1px solid green",
+    border: '.05px solid #fff',
 
   },
+
   form: {
     display: 'flex',
     flexDirection: 'row',
@@ -62,6 +48,7 @@ const styles = makeStyles(theme => ({
     height: "100 % !important",
     color: "transparent!important",
   },
+
   formGroup: {
     display: 'flex',
     flexDirection: 'column',
@@ -70,18 +57,44 @@ const styles = makeStyles(theme => ({
     width: '100%',
     height: "100 % !important",
     color: "transparent!important",
+    borderRight: "1px solid #dddddd",
+    marginLeft: '10px',
+  },
+  formGroupLast: {
+
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+
+    height: "100 % !important",
+    color: "transparent!important",
+
+    marginLeft: '16px',
   },
   buttonwrapper: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
-    // border: '1px solid red',
-
+  },
+  input: {
+    border: '.05px solid #fff',
+  },
+  buttonGroup: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    width: '100%',
+    height: "100 % !important",
+    color: "transparent!important",
   },
 
-  button: {
 
+
+
+  button: {
     backgroundColor: "transparent !important",
     border: "0px !important",
     color: "#FFFFFF !important",
@@ -90,9 +103,7 @@ const styles = makeStyles(theme => ({
     fontSize: "16px !important",
     fontWeight: "600 !important",
     lineHeight: "16px !important",
-    margin: "0px 0 0 80px !important",
-
-
+    margin: "0px 0 0 30px !important",
     padding: "0px !important",
     textAlign: "inherit !important",
     textDecoration: "none !important",
@@ -110,8 +121,6 @@ const styles = makeStyles(theme => ({
     alignItems: "center",
     justifyContent: "center",
     display: "flex",
-
-
   },
 
 }))

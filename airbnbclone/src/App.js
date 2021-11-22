@@ -5,17 +5,18 @@ import { Box } from '@mui/material';
 
 import ElevateAppBar from './Components/ElevateAppBar';
 import HideAppBar from './Components/HideAppBar';
-import Pricing from './Components/Pricing';
+import App from './Components/App';
 import { border } from '@mui/system';
-function App() {
+function Application() {
   return (
     <>
-
-      <Pricing />
-
-
       {/* <ElevateAppBar />
       <HideAppBar /> */}
+      <App />
+
+
+
+
 
 
 
@@ -23,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default Application;

@@ -5,13 +5,12 @@ const styles = makeStyles(theme => ({
 
 
   findstuff: {
-    backgroundColor: '#fff !important',
+    // backgroundColor: '#fff !important',
+    // color: '#000 !important',
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    marginTop: '-100x',
-    padding: '10px',
-    zIndex: 50,
+
   },
 
 

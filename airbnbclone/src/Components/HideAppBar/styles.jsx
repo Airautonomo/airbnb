@@ -8,7 +8,7 @@ const styles = makeStyles(theme => ({
     // alignItems: 'center',
     // position: 'fixed',
     // top: 0,
-
+    // padding: '10px',
   },
 
 }))

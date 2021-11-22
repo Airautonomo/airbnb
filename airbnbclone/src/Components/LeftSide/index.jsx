@@ -11,7 +11,7 @@ export default function LeftSide() {
   const tabletView = useMediaQuery(theme.breakpoints.down("xl"))
   const classes = useStyles(theme)
   return (
-    <Box>{mediumView ? <Box className={classes.root} >
+    <Box>{mediumView ? <Box className={classes.leftroot} >
       {tabletView ? <TinyCompanyLogo /> : <CompanyLogo />}
     </Box > : null}</Box>
   );
