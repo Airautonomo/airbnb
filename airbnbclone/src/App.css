@@ -1,48 +1,145 @@
 
+ html {
+  -ms-text-size-adjust:100%;
+  -moz-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%
+ }
+ *,
+ *:before,
+ *:after {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  -ms-flex:0 1 auto
+ }
+ body {
+  font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size:14px;
+  line-height:1.43;
+  background-color: #000;
+ color:#FF385C;
+  margin:0;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  
+ }
+ body {
+  line-break:strict
+ }
+ [lang="ko"] body {
+  word-break:keep-all
+ }
+ button,
+ html input[type="button"],
+ input[type="reset"],
+ input[type="submit"] {
+  -webkit-appearance:button;
+  cursor:pointer
+ }
+ input,
+ textarea,
+ select,
+ button,
+ a {
+  font-family:inherit;
+  font-size:100%
+ }
 
- /* .foto {
- @media (min-width: 1128px)
-._yl2jm9 {
-    padding: 40px 80px !important;
-}}
- 
- .foto {
-
-@media (min-width: 950px)
-._yl2jm9 {
-    padding: 45px 40px !important;
-}
-@media (min-width: 744px)
-._yl2jm9 {
-    padding: 40px 40px !important;
-}
+ /* .skip-to-content:focus {
+  background-color:white;
+  font-size:18px;
+  padding:0 24px;
+  position:absolute;
+  left:3px;
+  line-height:64px;
+  top:3px;
+  z-index:10000
+  
  } */
-
- /* .foto {
+ .foto {
   display: inline-block !important;
   vertical-align: bottom !important;
   min-height: 1px !important;
   position: relative !important;
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
-  width: 100% !important;
-  max-width: 1760px !important;
-  margin: auto !important;
-  padding: 32px 3% !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border: solid 1px #red !important;
-} */ */
-
-
-
-body {
-  margin: 0;
-  background-color: #000 !important;
-  font-family: "Open Sans", sans-serif !important;
-  /* font-size: 16px !important;
-  font-weight: 400 !important; */
-  line-height: 1.5 !important;
-  color: #4a4a4a !important;
-  -webkit-font-smoothing: antialiased !important;
 }
+/* ._dae4t6 {
+  height: 0px !important;
+  width: 0px !important;
+} */
+/* 
+._i0dxben {
+  background-color: inheret !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  outline: none !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  display: -webkit-inline-box !important;
+  display: -moz-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: -webkit-inline-flex !important;
+  display: inline-flex !important;
+  height: 80px !important;
+  position: relative !important;
+  vertical-align: middle !important;
+  z-index: 1 !important;
+  color: #ffffff !important;
+}
+
+._i0dxben::-moz-focus-inner {
+  border: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+} */
+/* 
+._i0dxben:focus::-moz-focus-inner {
+  border: none !important;
+}
+
+._i0dxben:-moz-focusring {
+  outline: none !important;
+}
+
+._i0dxben::before {
+  border-radius: 12px !important;
+  bottom: 8px !important;
+  content: "" !important;
+  left: -8px !important;
+  position: absolute !important;
+  right: -8px !important;
+  top: 8px !important;
+}
+
+._i0dxben:focus-visible::before {
+  -webkit-transition: box-shadow 0.2s ease !important;
+  -moz-transition: box-shadow 0.2s ease !important;
+  transition: box-shadow 0.2s ease !important;
+  box-shadow: 0px 0px 0px 2px #222222, 0px 0px 0px 4px #ffffff !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ._i0dxben:focus-visible::before {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+
+._i0dxben:focus[data-focus-visible-added]::before {
+  -webkit-transition: box-shadow 0.2s ease !important;
+  -moz-transition: box-shadow 0.2s ease !important;
+  transition: box-shadow 0.2s ease !important;
+  box-shadow: 0px 0px 0px 2px #222222, 0px 0px 0px 4px #ffffff !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ._i0dxben:focus[data-focus-visible-added]::before {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+} */
+
+

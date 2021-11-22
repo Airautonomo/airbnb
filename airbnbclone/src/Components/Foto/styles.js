@@ -9,6 +9,7 @@ const styles = makeStyles(theme => ({
     width: '100%',
     height: "100 % !important",
     color: "transparent!important",
+    borderRadius: "9999999px",
   }
 }))
 

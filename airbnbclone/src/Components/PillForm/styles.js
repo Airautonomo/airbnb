@@ -6,7 +6,7 @@ const styles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    maxWidth: '750px',
+    maxWidth: '840px',
     minWidth: '60%',
 
 
@@ -22,7 +22,7 @@ const styles = makeStyles(theme => ({
     backgroundColor: '#fff',
     borderRadius: '35px',
     width: '100%',
-    maxWidth: '730px',
+    maxWidth: '830px',
     height: "66px !important",
   },
 
@@ -44,7 +44,6 @@ const styles = makeStyles(theme => ({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-
     height: "100 % !important",
     color: "transparent!important",
   },

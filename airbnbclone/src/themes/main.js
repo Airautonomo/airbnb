@@ -17,12 +17,18 @@ const theme = createTheme({
     primary: {
       main: '#ff385c',
 
-    }, text: {
-      primary: '#fff',
+
+
+
     },
     secondary: {
-      main: '#71717f',
+      main: '#EBEBEB;',
     },
+
+    text: {
+      primary: '#fff',
+    },
+
     common: {
       white: '#fff',
       black: '#000',

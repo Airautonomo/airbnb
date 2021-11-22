@@ -5,7 +5,7 @@ import useTheme from '@mui/styles/useTheme'
 import Button from '@mui/material/Button'
 import { ReactComponent as SearchSvg } from "../../Assets/Svgs/search.svg"
 import { Toolbar } from '@mui/material'
-
+import { ReactComponent as BigSearchSvg } from '../../Assets/Svgs/bigsearch.svg'
 export default function SearchMiddle() {
   const theme = useTheme()
   const classes = useStyles(theme)
@@ -21,13 +21,14 @@ export default function SearchMiddle() {
         onClick={handleClick}
         className={classes.searchfeild}
       >
-        <Button
-          className={classes.searchButton}
-        ><SearchSvg className={classes.searchicon} />
-        </Button>
 
 
-      </Box>
+        <div className={classes.buttongroup}>
+          <div className={classes.buttonwrapper}>
+            <button className={classes.button}><BigSearchSvg /></button>
+          </div></div>
+
+      </Box >
     </Toolbar >
 
 
