@@ -25,6 +25,7 @@ import SearchMiddle from '../SearchMiddle'
 import PillForm from '../PillForm'
 import ElevateAppBar from '../ElevateAppBar'
 import { styled, alpha } from '@mui/material/styles'
+import Foto from '../Foto'
 
 // export const StyledAppBar = styled(AppBar)(({ theme }) => ({
 //   // Override media queries injected by theme.mixins.toolbar
@@ -138,12 +139,14 @@ function HideAppBar(props) {
         </AppBar> : <SearchMiddle />}
       </HideOnScroll>
       <Container>
-        {/* <Box sx={{ my: 24 }}>
-        </Box> */}
-      </Container>
-      {/* <Box sx={{ my: 30 }}>
+        <Box sx={{ m: 24 }}>
 
-      </Box > */}
+        </Box>
+
+      </Container>
+
+      <Foto />
+
 
     </React.Fragment>
   );
