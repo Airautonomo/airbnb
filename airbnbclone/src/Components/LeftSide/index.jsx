@@ -7,13 +7,13 @@ import TinyCompanyLogo from '../TinyCompanyLogo'
 import useMediaQuery from '@mui/material/useMediaQuery'
 export default function LeftSide() {
   const theme = useTheme()
+  const mediumView = useMediaQuery(theme.breakpoints.up("md"))
   const tabletView = useMediaQuery(theme.breakpoints.down("xl"))
   const classes = useStyles(theme)
   return (
-    <Box className={classes.root} >
+    <Box>{mediumView ? <Box className={classes.root} >
       {tabletView ? <TinyCompanyLogo /> : <CompanyLogo />}
-    </Box >
-
+    </Box > : null}</Box>
   );
 }
 

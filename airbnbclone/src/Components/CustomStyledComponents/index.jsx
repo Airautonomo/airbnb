@@ -3,7 +3,7 @@ import useStyles from './styles'
 import { useTheme } from '@mui/styles';
 import { styled } from '@mui/material/styles'
 import Toolbar from '@mui/material/Toolbar'
-import { IconButton } from "@mui/material";
+import { AppBar, IconButton } from "@mui/material";
 import { ToggleButton } from "@mui/material";
 
 export const StyledToolBar = styled(Toolbar)(({ theme }) => ({
@@ -21,6 +21,14 @@ export const StyledToolBar = styled(Toolbar)(({ theme }) => ({
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
   fontSize: '.9rem',
 }));
+export const CustomAppBar = styled(AppBar)(({ theme }) => ({
+  margin: "0 80px 0 80px",
+  display: "flex",
+  alignItems: "center",
+  alignSelf: "center",
+  justifyContent: "space-between",
+
+}));
 
 export const CustomToggleButton = styled(ToggleButton)(({ theme }, ...props) => ({
   ...props,
@@ -30,7 +38,6 @@ export const CustomToggleButton = styled(ToggleButton)(({ theme }, ...props) => 
   position: 'relative !important',
   backgroundColor: "#FFFFFF !important",
   border: '1px solid #DDDDDD !important',
-
   cursor: 'pointer !important',
   display: '-webkit-inline-box !important',
   display: '-moz-inline-box !important',

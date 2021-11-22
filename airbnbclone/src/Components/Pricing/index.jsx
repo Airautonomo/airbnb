@@ -6,7 +6,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
-import CssBaseline from '@mui/material/CssBaseline';
+
 import Grid from '@mui/material/Grid';
 import StarIcon from '@mui/icons-material/StarBorder';
 import Toolbar from '@mui/material/Toolbar';
@@ -23,7 +23,9 @@ import useScrollTrigger from '@mui/material/useScrollTrigger'
 import useStyles from './styles'
 import useTheme from '@mui/styles/useTheme';
 import useMediaQuery from '@mui/material/useMediaQuery'
-import SearchBar from '../SearchBar'
+import SearchMiddle from '../SearchMiddle';
+import PillForm from '../PillForm';
+
 function HideOnScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({
@@ -41,6 +43,74 @@ HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
   window: PropTypes.func,
 };
+
+
+function HideAppBar(props) {
+
+  const theme = useTheme()
+  const mediumView = useMediaQuery(theme.breakpoints.down("md"))
+  const largeView = useMediaQuery(theme.breakpoints.up('lg'))
+  const classes = useStyles(theme)
+  return (
+    <React.Fragment>
+      <HideOnScroll {...props} >
+        {!mediumView ? <AppBar
+
+          color="inherit"
+          // elevation={0}
+          sx={{
+            // borderBottom:
+            //   (theme) => `1px solid ${theme.palette.divider}`,
+            margin: (theme) => `0 ${theme.spacing(8)}px`
+          }}
+          className={classes.nav}>
+          <Toolbar
+            sx={
+              {
+                flexWrap: 'wrap',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+              }}
+            className={classes.toolbar}>
+            <Box
+              color="inherit"
+              noWrap
+            >
+              <LeftSide />
+            </Box>
+            {largeView ?
+              <Box
+                sx={{ flexGrow: 1 }}
+                className={classes.center}
+              >
+                <CenteredTabs />
+              </Box> :
+
+              <RightSide />
+            }
+            {largeView ?
+              <RightSide />
+              :
+              <Box
+                sx={{ flexGrow: 1 }}
+                className={classes.center}
+              >
+                <CenteredTabs />
+              </Box>}
+          </Toolbar>
+        </AppBar> : <SearchMiddle />}
+      </HideOnScroll>
+      <Container>
+        <Box sx={{ my: 24 }}>
+        </Box>
+      </Container>
+      <Box sx={{ my: 30 }}>
+
+      </Box >
+
+    </React.Fragment>
+  );
+}
 
 function Copyright(props) {
   return (
@@ -127,42 +197,28 @@ function PricingContent() {
   const classes = useStyles(theme)
   return (
     <React.Fragment>
-      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
-      {!mediumView ? <AppBar
-        position="static"
-        color="default"
-        elevation={0}
-        sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
-        className={classes.nav}>
-
-        <Toolbar sx={{ flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}
-          className={classes.toolbar}>
-
-          <Box color="inherit" noWrap >
-            <LeftSide />
-          </Box>
-
-          {largeView ? <Box sx={{ flexGrow: 1 }}
-            className={classes.center}>
-            <CenteredTabs />
-          </Box> : <Box wrap sx={{ my: 1, mx: 1.5 }}>
-            <RightSide />
-          </Box>}
+      <GlobalStyles styles={{
+        ul: { margin: 0, padding: 0, listStyle: 'none' },
+        body: {
+          // paddingLeft: "80px",
+          // paddingRight: "80px",
+          backgroundColor: [theme.palette.background.default],
+          color: [theme.palette.text.primary],
+        }
+      }} />
+      <Box
+        sx={{
 
 
-          {largeView ?
-            <RightSide />
-            : <Box sx={{ flexGrow: 1 }}
-              className={classes.center}>
-              <CenteredTabs />
-            </Box>}
+        }}
 
-
-        </Toolbar>
-      </AppBar> : <SearchBar />}
+      >
+        <HideAppBar />
+        <PillForm />
+      </Box>
 
       {/* Hero unit */}
-      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+      <Container maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
         <Typography
           component="h1"
           variant="h2"
@@ -276,7 +332,7 @@ function PricingContent() {
         <Copyright sx={{ mt: 5 }} />
       </Container>
       {/* End footer */}
-    </React.Fragment>
+    </React.Fragment >
   );
 }
 

@@ -8,7 +8,7 @@ const styles = makeStyles(theme => ({
     color: 'inherit',
     borderOpacity: 0.5,
 
-    verticalAlign: 'middle !important',
+    // verticalAlign: 'middle !important',
 
   }
 }))

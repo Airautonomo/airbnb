@@ -27,6 +27,7 @@ export const StyledAppBar = styled(AppBar)(({ theme }) => ({
     justifyContent: 'center',
     flexdirection: 'column',
 
+
   },
   backgroundColor: [theme.palette.common.white,],
   color: [theme.palette.common.black,],

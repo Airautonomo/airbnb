@@ -8,8 +8,8 @@ const theme = createTheme({
     values: {
       xs: 0,
       sm: 374,
-      md: 744,
-      lg: 950,
+      md: 793,
+      lg: 1130,
       xl: 1128,
     },
   },
@@ -17,6 +17,8 @@ const theme = createTheme({
     primary: {
       main: '#ff385c',
 
+    }, text: {
+      primary: '#fff',
     },
     secondary: {
       main: '#71717f',

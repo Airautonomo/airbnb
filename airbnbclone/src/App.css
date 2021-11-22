@@ -130,5 +130,14 @@
     transition: none !important;
   }
 } */
-
+/* body {
+  background-color: #000 !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #fff !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+} */
 
