@@ -1,13 +1,13 @@
-# MyAirbnb Clone
-## _What it has taught me_
+# 
+## MyAirbnb Clone
 
-Do this
-✨Its faster!✨!
+
+✨faster!✨!
 ```
 import foo from folder/foo
 ```
-Not this
-🐌This is slower!🐌
+
+🐌slower!🐌
 ```
 import {foo} from folder
 ```
