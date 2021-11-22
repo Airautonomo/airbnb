@@ -13,10 +13,13 @@ const TinyCompanyLogo = ({ color }) => {
       class=""
       color={"inherit"}
       aria-label="Airbnb Icon"
-      sx={{ ml: 1 }}
+
+
+
     >
       <TinyIconSvg
-        className={classes.root}
+        className={classes.icon}
+
       />
     </Box>
 

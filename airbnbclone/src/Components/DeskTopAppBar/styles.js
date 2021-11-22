@@ -7,8 +7,10 @@ const styles = makeStyles(theme => ({
     padding: '10px',
     backgroundColor: 'inherit !important',
     justifyContent: 'space-between',
-    paddingBottom: '100px',
-    marginTop: '-100x',
+    // paddingBottom: '100px',
+    // marginTop: '-100x',
+
+    height: "140% !important",
     zIndex: 100,
   },
   center: {

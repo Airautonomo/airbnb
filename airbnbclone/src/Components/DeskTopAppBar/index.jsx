@@ -21,7 +21,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 }));
 export default function DeskTopAppBar() {
   const theme = useTheme()
-  const tabletView = useMediaQuery(theme.breakpoints.down("lg"))
+
   const classes = useStyles(theme)
   return (
     <AppBar
