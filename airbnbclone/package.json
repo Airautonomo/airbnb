@@ -1,7 +1,7 @@
 {
   "name": "airbnbclone",
   "version": "0.1.0",
-  "homepage": "http://{Airautonomo}.github.io/{airbnb}",
+  "homepage": "http://Airautonomo.github.io/airbnb",
   "private": false,
   "dependencies": {
     "-": "^0.0.1",
