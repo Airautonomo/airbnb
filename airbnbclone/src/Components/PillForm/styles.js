@@ -10,6 +10,7 @@ const styles = makeStyles(theme => ({
     minWidth: '60%',
 
 
+
   },
 
   wrapper: {

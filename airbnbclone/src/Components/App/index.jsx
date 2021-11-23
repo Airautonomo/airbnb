@@ -25,7 +25,7 @@ import SearchMiddle from '../SearchMiddle'
 import PillForm from '../PillForm'
 import ElevateAppBar from '../ElevateAppBar'
 import Foto from '../Foto'
-
+import { Paper } from '@mui/material'
 //
 
 
@@ -65,7 +65,7 @@ import { border } from '@mui/system'
 //   backgroundColor: [theme.palette.common.black,],
 //   color: [theme.palette.common.white,],
 // }));
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 function HideOnScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({
@@ -82,14 +82,15 @@ HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
   window: PropTypes.func,
 };
-// const CustomHideAppBar = styled(AppBar)(({ theme }) => ({
-//   margin: "0 80px 0 80px",
-//   display: "flex",
-//   alignItems: "center",
-//   alignSelf: "center",
-//   justifyContent: "space-between",
+const CustomHideAppBar = styled(AppBar)(({ theme }) => ({
+  margin: "0 80px 0 80px",
+  display: "flex",
+  alignItems: "center",
+  alignSelf: "center",
+  justifyContent: "space-between",
+}));
 
-// }));
+
 
 function HideAppBar(props) {
   const theme = useTheme()
@@ -100,12 +101,11 @@ function HideAppBar(props) {
     <React.Fragment>
       <HideOnScroll {...props} >
         {!mediumView ? <AppBar
-          color="inherit"
 
           sx={{
             marginTop: "-10px",
             zIndex: 150, position: 'sticky',
-            backgroundColor: 'black', color: 'white',
+            // backgroundColor: 'black', color: 'white',
             display: 'flex',
             justifyContent: 'space-between',
 
@@ -287,12 +287,12 @@ function AppContent() {
       </Container>
       <Container maxWidth="md" component="main" sx={{ pt: 1, pb: 1, }}>
         <Typography variant="body1" align="left" color="white" component="p">
-          Explore the 50+ upgrades we’re launching as part of our 2021 Winter Release.       <Button variant='contained'>Learn More</Button>
+          Explore the 50+ upgrades we’re launching as part of our 2021 Winter Release.       <Button color="secondary" variant='contained'>Learn More</Button>
         </Typography>
 
       </Container>
 
-      <Container maxWidth="sm" component="main" sx={{ pt: 0, pb: 6, ml: 100 }}>
+      <Container maxWidth="sm" component="main" sx={{ pt: 0, pb: 6, }}>
 
       </Container>
 
@@ -309,7 +309,7 @@ function AppContent() {
               md={4}
             >
               {/* <Card>
-        
+
                 <CardContent>
                   <Box
                     sx={{
@@ -343,13 +343,13 @@ function AppContent() {
           ))}
         </Grid>
       </Container>
-      <Container sx={{ py: 8, backgroundColor: "#fff" }} maxWidth="false">
+      <Container sx={{ pt: 8, pb: 20, backgroundColor: "#fff" }} maxWidth="false">
         {/* End hero unit */}
         <Grid container spacing={2}>
           {tiers.map((card) => (
             <Grid item key={card} xs={12} sm={6} md={3}>
               <Card
-                sx={{ height: '270px', width: "220px", display: 'flex', flexDirection: 'column', borderRadius: '20px' }}
+                sx={{ height: '270px', width: "200px", display: 'flex', flexDirection: 'column', borderRadius: '20px' }}
               >
                 <CardMedia
                   component="img"
@@ -376,37 +376,123 @@ function AppContent() {
           ))}
         </Grid>
       </Container>
-      {/* Footer */}
-      <Container
-        maxWidth="false"
-        component="footer"
-        sx={{
-          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-          mt: 0,
-          py: [0, 0],
-        }}
-      >
-        <Grid container spacing={4} justifyContent="space-evenly" backgroundColor="#EBEBEB">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="body2" color="black" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item}>
-                    <Link href="#" variant="subtitle1" color="rgb(34, 34, 34)">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-          <Copyright sx={{ mt: 5, pb: 4 }} />
-        </Grid>
+      <Container sx={{ pt: 8, pb: 20, backgroundColor: "#fff" }} maxWidth="false">
+        {/* End hero unit */}
+        <Paper elevation={3}>
+          <Grid container spacing={0} alignContent={"center"}>
 
+            <Grid item xs={12} sm={12} md={12}>
+              <Card
+                sx={{ height: '100%', width: "100%", display: 'flex', flexDirection: 'column', borderRadius: '20px' }}
+              >
+                <CardMedia
+                  component="img"
+                  sx={{
+                    // 16:9
+                    // pt: '56.25%',
+                  }}
+                  image={"https://a0.muscache.com/im/pictures/3d147230-aeba-4a73-aee5-adcf388eba76.jpg?im_q=highq&amp;im_w=720"}
+                  alt="city"
+                />
+                {/* <CardContent sx={{ flexGrow: 1, pb: 9 }}>
+                  <div class="_i5m7e6w">
+                    <div class="_16mr3emj" >
+                      <div class="_1ot88a2">
+                        <div class="_ussrz76"
+                          style={{ height: "100%", width: "100%" }}
+                          role="img" aria-busy="true" aria-label="Image is loading">
+                          <picture>
+                            <source
+                              srcset="
+                                                                                                                            https://a0.muscache.com/im/pictures/24535835-bd90-4c69-bfdb-cc968e5af4df.jpg?im_q=highq&amp;im_w=1920 1x,
+                                                                                                                            https://a0.muscache.com/im/pictures/24535835-bd90-4c69-bfdb-cc968e5af4df.jpg?im_q=highq&amp;im_w=2560 2x
+                                                                                                                        "
+                              media="(min-width: 2080px)" />
+                            <source
+                              srcset="
+                                                                                                                            https://a0.muscache.com/im/pictures/24535835-bd90-4c69-bfdb-cc968e5af4df.jpg?im_w=1200 1x,
+                                                                                                                            https://a0.muscache.com/im/pictures/24535835-bd90-4c69-bfdb-cc968e5af4df.jpg?im_w=2560 2x
+                                                                                                                        "
+                              media="(min-width: 1440px)" />
+                            <source
+                              srcset="
+                                                                                                                            https://a0.muscache.com/im/pictures/101e7c24-199a-4f69-9a00-d9b253657a44.jpg?im_w=960  1x,
+                                                                                                                            https://a0.muscache.com/im/pictures/101e7c24-199a-4f69-9a00-d9b253657a44.jpg?im_w=1920 2x
+                                                                                                                        "
+                              media="(min-width: 1128px)" />
+                            <source
+                              srcset="
+                                                                                                                            https://a0.muscache.com/im/pictures/d3f25640-6035-4e50-adaa-cb1f26ee0685.jpg?im_w=720  1x,
+                                                                                                                            https://a0.muscache.com/im/pictures/d3f25640-6035-4e50-adaa-cb1f26ee0685.jpg?im_w=1440 2x
+                                                                                                                        "
+                              media="(min-width: 744px)" />
+                            <source
+                              srcset="
+                                                                                                                            https://a0.muscache.com/im/pictures/f2541836-75b4-4fb8-a99d-b77690be53b8.jpg?im_w=320 1x,
+                                                                                                                            https://a0.muscache.com/im/pictures/f2541836-75b4-4fb8-a99d-b77690be53b8.jpg?im_w=720 2x
+                                                                                                                        "
+                              media="(min-width: 375px)" />
+                            <source
+                              srcset="
+                                                                                                                            https://a0.muscache.com/im/pictures/3d147230-aeba-4a73-aee5-adcf388eba76.jpg?im_w=320 1x,
+                                                                                                                            https://a0.muscache.com/im/pictures/3d147230-aeba-4a73-aee5-adcf388eba76.jpg?im_w=720 2x
+                                                                                                                        " />
+                            <img
+
+                              // style={{ "position: absolute; left: 0; right: 0; object-fit: cover; object-position: center; vertical-align: bottom;"}}
+                              aria-hidden="true"
+                              alt="A guest stands, waving, in the doorway of a unique-looking dome house at dusk, bathed in warm, welcoming light."
+                              src="https://a0.muscache.com/im/pictures/3d147230-aeba-4a73-aee5-adcf388eba76.jpg?im_q=highq&amp;im_w=720" />
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </CardContent> */}
+                <CardActions>
+
+                </CardActions>
+              </Card>
+
+            </Grid>
+
+          </Grid>
+        </Paper>
       </Container>
+      {/* Footer */}
+      <Paper>
+        <Container
+          maxWidth="false"
+          component="div"
+          sx={{
+            borderTop: (theme) => `1px solid ${theme.palette.divider}`,
+            mt: 8,
+            py: [3, 6],
+          }}
+        >
+          <Grid container spacing={4} justifyContent="space-evenly" backgroundColor="#EBEBEB" pt={9} mt={9}>
+            {footers.map((footer) => (
+              <Grid item xs={6} sm={3} key={footer.title}>
+                <Typography variant="h6" color="black" gutterBottom>
+                  {footer.title}
+                </Typography>
+                <ul>
+                  {footer.description.map((item) => (
+                    <li key={item}>
+                      <Link href="#" variant="subtitle1" color="rgb(34, 34, 34)">
+                        {item}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </Grid>
+            ))}
+            <Copyright sx={{ mt: 5, pb: 4 }} />
+          </Grid>
+
+        </Container>
+      </Paper>
       {/* End footer */}
     </React.Fragment >
   );

@@ -2,6 +2,7 @@ import './App.css';
 import DeskTopAppBar from './Components/DeskTopAppBar'
 import Search from './Components/HideAppBar'
 import { Box } from '@mui/material';
+import Paper from '@mui/material/Paper';
 
 import ElevateAppBar from './Components/ElevateAppBar';
 import HideAppBar from './Components/HideAppBar';
@@ -13,6 +14,7 @@ function Application() {
       {/* <ElevateAppBar />
       <HideAppBar /> */}
       <App />
+
 
 
 

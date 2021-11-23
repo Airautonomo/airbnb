@@ -1,6 +1,22 @@
 import createTheme from '@mui/material/styles/createTheme'
 
 const spacing = (factor) => factor * 8
+const primary = {
+  dark: "#A01F62",
+  main: "#a02062",
+  light: "#f1e1e9",
+}
+const secondary = {
+  main: "#69b9c3",
+  light: "#85c8d0",
+  dark: "#33A3B1",
+}
+const error = {
+  main: "#F84738",
+}
+const text = {
+  primary: "#190e28",
+}
 
 const theme = createTheme({
   spacing,
@@ -14,29 +30,23 @@ const theme = createTheme({
     },
   },
   palette: {
-    primary: {
-      main: '#ff385c',
+
+    primary,
+    secondary,
+    text,
+    error,
 
 
 
 
-    },
-    secondary: {
-      main: '#EBEBEB;',
-    },
-
-    text: {
-      primary: '#fff',
-    },
-
-    common: {
-      white: '#fff',
-      black: '#000',
-    },
-    background: {
-      paper: '#ffffff',
-      default: '#000000',
-    },
+    // common: {
+    //   white: '#fff',
+    //   black: '#000',
+    // },
+    // background: {
+    //   paper: '#ffffff',
+    //   default: '#000000',
+    // },
   },
   typography: {
     fontFamily: 'Open Sans',
