@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/airbnb/static/css/main.23e9bbdc.chunk.css",
-    "main.js": "/airbnb/static/js/main.ae96cbce.chunk.js",
-    "main.js.map": "/airbnb/static/js/main.ae96cbce.chunk.js.map",
-    "runtime-main.js": "/airbnb/static/js/runtime-main.c9af50fe.js",
-    "runtime-main.js.map": "/airbnb/static/js/runtime-main.c9af50fe.js.map",
-    "static/js/2.e7d4c672.chunk.js": "/airbnb/static/js/2.e7d4c672.chunk.js",
-    "static/js/2.e7d4c672.chunk.js.map": "/airbnb/static/js/2.e7d4c672.chunk.js.map",
-    "static/js/3.dfcb28fe.chunk.js": "/airbnb/static/js/3.dfcb28fe.chunk.js",
-    "static/js/3.dfcb28fe.chunk.js.map": "/airbnb/static/js/3.dfcb28fe.chunk.js.map",
+    "main.css": "/airbnb/static/css/main.f69cda0d.chunk.css",
+    "main.js": "/airbnb/static/js/main.a1e5d6aa.chunk.js",
+    "main.js.map": "/airbnb/static/js/main.a1e5d6aa.chunk.js.map",
+    "runtime-main.js": "/airbnb/static/js/runtime-main.db5f4229.js",
+    "runtime-main.js.map": "/airbnb/static/js/runtime-main.db5f4229.js.map",
+    "static/js/2.682c31a8.chunk.js": "/airbnb/static/js/2.682c31a8.chunk.js",
+    "static/js/2.682c31a8.chunk.js.map": "/airbnb/static/js/2.682c31a8.chunk.js.map",
+    "static/js/3.c7403739.chunk.js": "/airbnb/static/js/3.c7403739.chunk.js",
+    "static/js/3.c7403739.chunk.js.map": "/airbnb/static/js/3.c7403739.chunk.js.map",
     "index.html": "/airbnb/index.html",
-    "static/css/main.23e9bbdc.chunk.css.map": "/airbnb/static/css/main.23e9bbdc.chunk.css.map",
-    "static/js/2.e7d4c672.chunk.js.LICENSE.txt": "/airbnb/static/js/2.e7d4c672.chunk.js.LICENSE.txt",
+    "static/css/main.f69cda0d.chunk.css.map": "/airbnb/static/css/main.f69cda0d.chunk.css.map",
+    "static/js/2.682c31a8.chunk.js.LICENSE.txt": "/airbnb/static/js/2.682c31a8.chunk.js.LICENSE.txt",
     "static/media/account.fac18bea.svg": "/airbnb/static/media/account.fac18bea.svg",
+    "static/media/bigsearch.d1799a9d.svg": "/airbnb/static/media/bigsearch.d1799a9d.svg",
     "static/media/icon.1fbdc141.svg": "/airbnb/static/media/icon.1fbdc141.svg",
     "static/media/search.474255bf.svg": "/airbnb/static/media/search.474255bf.svg",
     "static/media/tinyicon.6840e6d4.svg": "/airbnb/static/media/tinyicon.6840e6d4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c9af50fe.js",
-    "static/js/2.e7d4c672.chunk.js",
-    "static/css/main.23e9bbdc.chunk.css",
-    "static/js/main.ae96cbce.chunk.js"
+    "static/js/runtime-main.db5f4229.js",
+    "static/js/2.682c31a8.chunk.js",
+    "static/css/main.f69cda0d.chunk.css",
+    "static/js/main.a1e5d6aa.chunk.js"
   ]
 }
