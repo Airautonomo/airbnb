@@ -19,7 +19,8 @@ Also after soending too much time on breakpoints for the nav bar I sort of rushe
 
 
 ## Code splitting
-I learned about code splitting and am excited to try it in my own projects
+I learned about code splitting and am excited to try it in my own projects.
+I also experimented with imports and found this
 
 
 ✨faster!✨!
