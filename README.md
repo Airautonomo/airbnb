@@ -2,6 +2,26 @@
 ## MyAirbnb Clone
 
 
+## What was learned 
+
+I learned alot making this clone.
+I learned anout the new styled components API in MUI V5,
+I learned about the grid system and its spaceing. 
+Particularly it applies margin to the top and left side of grid items for spacing.
+In order to get things centered you need to apply margin to the right for the last items.
+The package size of this repo is probably huge because i didn't bother to import icons one at a time
+In a real project I would.
+Also after soending too much time on breakpoints for the nav bar I sort of rushed through the rest of the site,
+
+
+
+
+
+
+## Code splitting
+I learned about code splitting and am excited to try it in my own projects
+
+
 ✨faster!✨!
 ```
 import foo from folder/foo
