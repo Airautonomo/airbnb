@@ -5,7 +5,7 @@
 ## What was learned 
 
 I learned alot making this clone.
-I learned anout the new styled components API in MUI V5,
+I learned about the new styled components API in MUI V5,
 I learned about the grid system and its spaceing. 
 Particularly it applies margin to the top and left side of grid items for spacing.
 In order to get things centered you need to apply margin to the right for the last items.
