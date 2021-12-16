@@ -18,7 +18,7 @@ export default function RightSide() {
   return (
 
     <Box
-      className={classes.root}
+      className={classes.rightroot}
     >
       <StyledIconButton
         size='small'

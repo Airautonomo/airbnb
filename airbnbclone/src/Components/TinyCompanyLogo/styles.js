@@ -1,11 +1,14 @@
 import makeStyles from '@mui/styles/makeStyles'
+import { height } from '@mui/system'
 
 const styles = makeStyles(theme => ({
-  root: {
-    marginRight: theme.spacing(1),
+  icon: {
+    width: "266.2px",
     backgroundColor: 'inheret',
     color: 'inherit',
-    borderOpacity: 0.5
+    borderOpacity: 0.5,
+
+    // verticalAlign: 'middle !important',
 
   }
 }))

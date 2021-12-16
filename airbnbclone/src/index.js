@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import Application from './App'
 import reportWebVitals from './reportWebVitals'
 import ThemeProvider from '@mui/styles/ThemeProvider'
 import main from '../src/themes/main'
 
 ReactDOM.render(
   <ThemeProvider theme={main}>
-    <App />
+    <Application />
   </ThemeProvider>
   ,
   document.getElementById('root')
